@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Autor: Moacir Neto (moacirbmn)
+# Autor: Moacir Neto - (moacirbmn)
 # Descrição: Script para configuração do Zabbix Agent 2
 
 # Função para imprimir uma caixa de destaque
