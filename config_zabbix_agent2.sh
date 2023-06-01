@@ -73,6 +73,8 @@ if [ "$monitor_docker" = "s" ]; then
     echo "Plugins.Docker.Endpoint=unix:///var/run/docker.sock" >> "$config_file"
 fi
 
+usermod -aG docker zabbix
+
 echo "Arquivo de configuração criado em: $config_file"
 echo
 
