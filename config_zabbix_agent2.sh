@@ -74,6 +74,7 @@ if [ "$monitor_docker" = "s" ]; then
 fi
 
 usermod -aG docker zabbix
+systemctl restart zabbix-agent2
 
 echo "Arquivo de configuração criado em: $config_file"
 echo
