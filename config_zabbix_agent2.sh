@@ -31,7 +31,7 @@ fi
 # Execute o comando openssl para gerar a chave PSK
 psk_file="/etc/zabbix/zabbix_agentd.psk"
 openssl rand -hex 32 > "$psk_file"
-chmod 400 "$psk_file"
+chmod 600 "$psk_file"
 
 # Pergunte ao usuário sobre as informações de configuração
 read -p "Endereço do servidor Zabbix: " server_address
