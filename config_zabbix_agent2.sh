@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Autor: Moacir Neto (moacirbmn)
+# Descrição: Script para configuração do Zabbix Agent 2
+
 # Função para imprimir uma caixa de destaque
 print_box() {
     local text="$1"
