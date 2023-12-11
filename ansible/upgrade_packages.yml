@@ -1,0 +1,15 @@
+---
+- name: Atualizar pacotes nos servidores
+  hosts: all
+  become: yes  # Torna-se root para executar os comandos
+
+  tasks:
+    - name: Atualizar lista de pacotes
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Fazer upgrade dos pacotes
+      apt:
+        upgrade: yes
+        update_cache: yes
